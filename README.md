@@ -34,7 +34,7 @@
 
 #### Пример работы
 
-Нажимаем **/subscribe** в [@AudioTubeBot](t.me/AudioTubeBot):
+Нажимаем **/subscribe** в [@AudioTubeBot](https://t.me/AudioTubeBot):
 - вызывается **generate_subscribe_link()** через **RedisQueue**
 - удаленная процедура генерирует ссылку, защищенную от изменений хэшем на основе токена бота
 - в базе данных создаются объекты **invoice** для каждого типа подписки
@@ -53,12 +53,12 @@
 
 #### Это и многое другое вот здесь:
 
-[@AudioTubeBot](t.me/AudioTubeBot) - лучший бот для работы с аудио (реально лучший)
+[@AudioTubeBot](https://t.me/AudioTubeBot) - лучший бот для работы с аудио (реально лучший)
 
-[@VideoTubeBot](t.me/VideoTubeBot) - лучший бот для работы с видео (реально лучший)
+[@VideoTubeBot](https://t.me/VideoTubeBot) - лучший бот для работы с видео (реально лучший)
 
-[@MediaTube_stream](t.me/MediaTube_stream) - канал автора (не самый лучший, но  подписывайтесь)
+[@MediaTube_stream](https://t.me/MediaTube_stream) - канал автора (не самый лучший, но  подписывайтесь)
 
-[@MediaTube_chat](t.me/MediaTube_chat) - чат для вопросов и выражения благодарности
+[@MediaTube_chat](https://t.me/MediaTube_chat) - чат для вопросов и выражения благодарности
 
 Призываю всех желающих внести посильный вклад и замечания в работу над сервисом
