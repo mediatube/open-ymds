@@ -1,0 +1,10 @@
+[Service]
+Type=simple
+WorkingDirectory=/home/youruser/billingservice/
+ExecStart=/usr/bin/python3.6 /home/youruser/billingservice/worker.py billing
+Restart=always
+RestartSec=10
+SyslogIdentifier=python-worker-billing
+User=youruser
+[Install]
+WantedBy=multi-user.target
