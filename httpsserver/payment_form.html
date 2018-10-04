@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MediaTube subscription</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #999;
+            font-weight: 300;
+            font-size: 20px;
+        }
+        .main-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 238px;
+            margin-left: -113px;
+            transform: translateY(-50%);
+        }
+        .payment-method + .payment-method {
+            margin-top: 20px;
+        }
+        .title {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-method">
+        <div class="title">Картой</div>
+        <div class="button">
+            <iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Donation-from-%USERID%&label=%TRANSACTIONLABEL%&default-sum=%DEFAULTSUM%&button-text=11&any-card-payment-type=on&button-size=l&button-color=orange&successURL=&quickpay=small&account=%YMACCOUNTID%&"
+                    width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div class="payment-method">
+        <div class="title">Яндекс.Деньги</div>
+        <div class="button">
+            <iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Donation-from-%USERID%&label=%TRANSACTIONLABEL%&default-sum=%DEFAULTSUM%&button-text=11&yamoney-payment-type=on&button-size=l&button-color=orange&successURL=&quickpay=small&account=%YMACCOUNTID%&"
+                    width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+        </div>
+    </div>
+    <div class="payment-method">
+        <div class="title">С мобильного</div>
+        <div class="button">
+            <iframe src="https://money.yandex.ru/quickpay/button-widget?targets=Donation-from-%USERID%&label=%TRANSACTIONLABEL%&default-sum=%DEFAULTSUM%&button-text=11&mobile-payment-type=on&button-size=l&button-color=orange&successURL=&quickpay=small&account=%YMACCOUNTID%&"
+                    width="227" height="48" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>

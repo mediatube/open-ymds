@@ -1,0 +1,12 @@
+[Unit]
+Description=Simple HTTPS YM Payment server
+
+[Service]
+WorkingDirectory=/home/youruser/open-ymds/httpsserver
+ExecStart=/usr/bin/python3.4 /home/youruser/open-ymds/httpsserver/httpsserver.py
+Restart=always
+RestartSec=10
+SyslogIdentifier=python-httpsserverpayment
+User=youruser
+[Install]
+WantedBy=multi-user.target
